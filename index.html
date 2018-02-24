@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Sigmar+One|Pacifico' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="assets/style.css">
+	<title>Create your own card</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="customcard">
+        <form action="card.html" method="post" class="pure-form pure-form-stacked">
+            <fieldset>
+                <legend>CUSTOMIZE YOUR CARD</legend>
+
+                <label for="image">Image</label>
+                <select name="image" id="image">
+                    <option value="birthday">Birthday</option>
+                    <option value="christmas">Christmas</option>
+                    <option value="valentines">Valentines</option>
+
+                </select>
+
+                <label for="background">Background colour</label>
+                <select name="background" id="background">
+                    <option value="celadon">Celadon</option>
+                    <option value="graphite">Graphite</option>
+                    <option value="rose">Barbie</option>
+                </select>
+
+                <label for="font">Font</label>
+                <select name="font" id="font">
+                    <option value="handwriting">Handwriting</option>
+                    <option value="sketch">Sketch</option>
+                    <option value="print">Print</option>
+                </select>
+
+                <label for="font">Border</label>
+                <select name="border" id="border">
+                    <option value="none">None</option>
+                    <option value="thin">Thin</option>
+                    <option value="thick">Thick</option>
+                    <option value="filled">Filled</option>
+                </select>
+
+
+                <label for="message">Your message</label>
+                <textarea name="message" id="message" cols="30" rows="8"></textarea>
+                <br>
+                <div class = "preview">
+                <p>Click on the card to preview</p>
+            </div>
+               <!--  <input type="submit" name="submit" class="pure-button pure-button-primary" value="Open card" id="openButton"> -->
+            </fieldset>
+        </form>
+    </div>
+
+    </div>
+<!-- CARD  -->
+    <div class="card celadonBackground">
+        <div>
+            <img src="assets/birthday.jpg"/>
+        </div>
+        <div class="noBorder" id="noneborder">
+            <h1 class="handwriting">Enter your message</h1>
+        </div>
+    </div>
+
+
+
+<!--SCRIPT-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="js/custom.js"></script>
+
+</body>
+</html>
